@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Trailer Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Logo atualizada com o nome correto -->
+        <img src="assets/d358ca0f4ef1b724361c30dd82547992.png" alt="Logo do Site" class="logo">
+    </header>
+
+    <div class="video-container">
+        <video id="video" src="assets/video1.mp4" controls></video>
+    </div>
+
+    <div class="controls">
+        <button onclick="zoomIn()">Zoom +</button>
+        <button onclick="zoomOut()">Zoom -</button>
+        <input type="range" id="progressBar" min="0" max="100" value="0">
+        <button onclick="pausePlay()">Play/Pause</button>
+        <button onclick="navigateNext()">Próximo Vídeo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
